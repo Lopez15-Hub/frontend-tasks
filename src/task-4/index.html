@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form class="content">
+      <h1>Formulario de ejemplo</h1>
+      <label class="label">
+        Nombre
+        <input
+          id="name"
+          class="input"
+          type="text"
+          placeholder="Nombre"
+          required
+          maxlength="60"
+        />
+      </label>
+      <label class="label">
+        Apellido
+        <input
+          class="input"
+          id="lastName"
+          type="text"
+          placeholder="Apellido"
+          required
+          maxlength="60"
+        />
+      </label>
+      <label class="label">
+        País de residencia
+        <select class="input" id="dropdown-country" required>
+          <option value="">Seleccionar país</option>
+          <option value="arg">Argentina</option>
+          <option value="chl">Chile</option>
+          <option value="per">Perú</option>
+          <option value="bol">Bolivia</option>
+          <option value="par">Paraguay</option>
+        </select>
+      </label>
+      <label class="label">
+        Comentarios adicionales
+        <textarea
+          id="comments"
+          class="input"
+          required
+          maxlength="200"
+          placeholder="Añada un comentario adicional..."
+        ></textarea>
+      </label>
+      <button onclick="captureValues();" class="btn" type="button">
+        Enviar formulario
+      </button>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
